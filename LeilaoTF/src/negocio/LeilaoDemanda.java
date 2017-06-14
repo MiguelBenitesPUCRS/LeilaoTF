@@ -5,44 +5,42 @@ import java.util.ArrayList;
 public class LeilaoDemanda implements Leilao{
 
 	Lote lote = new Lote();
-	
-	
+
 	@Override
-	public double getData() {
+	public Object getData() {
 		// TODO Auto-generated method stub
-		return 0;
+		return null;
 	}
 
 	@Override
-	public double getHoraInicial() {
+	public Object getHoraInicial() {
 		// TODO Auto-generated method stub
-		return 0;
+		return null;
 	}
 
 	@Override
-	public double hetHoraFinal() {
+	public Object getHoraFinal() {
 		// TODO Auto-generated method stub
-		return 0;
+		return null;
 	}
 
 	@Override
-	public boolean status() {
+	public Object getStatus() {
 		// TODO Auto-generated method stub
-		return false;
+		return null;
 	}
 
 	@Override
-	public int abertoOuFechado() {
+	public Object getTipoLeilao() {
 		// TODO Auto-generated method stub
-		return 0;
+		return null;
 	}
 
 	@Override
-	public ArrayList<Lote> getLotes() {
+	public ArrayList getLotes() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 	
 	
-
 }

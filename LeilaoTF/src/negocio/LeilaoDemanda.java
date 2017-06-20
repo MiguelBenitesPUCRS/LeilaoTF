@@ -1,43 +1,62 @@
 package negocio;
 
+import java.awt.List;
 import java.util.ArrayList;
 
-public class LeilaoDemanda implements Leilao{
+public class LeilaoDemanda<E> implements Leilao<E>{
 
-	Lote lote = new Lote();
+	 //lista de lotes
 
 	@Override
-	public Object getData() {
+	public E getData() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Object getHoraInicial() {
+	public E getHoraInicial() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Object getHoraFinal() {
+	public E getHoraFinal() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Object getStatus() {
+	public E getStatus() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Object getTipoLeilao() {
+	public List getLotes() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public ArrayList getLotes() {
+	public E getNaturezaLeilao() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public E getTipoLance() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public E adicionaLote(E lote) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public E removerLote(E lote) {
 		// TODO Auto-generated method stub
 		return null;
 	}

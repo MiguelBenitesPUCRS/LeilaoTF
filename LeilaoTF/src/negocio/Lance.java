@@ -1,36 +1,35 @@
 package negocio;
 
-public class Lance {
+public class Lance<E> {
 	
-	private String data;
-	private double hora;
-	private double valor;
-	private String usuario;
+	private E data;
+	private E hora;
+	private E valor;
+	private E usuario;
 	
-	public String getData() {
+	public E getData() {
 		return data;
 	}
-	public void setData(String data) {
+	public void setData(E data) {
 		this.data = data;
 	}
-	public double getHora() {
+	public E getHora() {
 		return hora;
 	}
-	public void setHora(double hora) {
+	public void setHora(E hora) {
 		this.hora = hora;
 	}
-	public double getValor() {
+	public E getValor() {
 		return valor;
 	}
-	public void setValor(double valor) {
+	public void setValor(E valor) {
 		this.valor = valor;
 	}
-	public String getUsuario() {
+	public E getUsuario() {
 		return usuario;
 	}
-	public void setUsuario(String usuario) {
+	public void setUsuario(E usuario) {
 		this.usuario = usuario;
 	}
-	
-	
+
 }

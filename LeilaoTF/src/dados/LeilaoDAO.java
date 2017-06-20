@@ -1,6 +1,6 @@
 package dados;
 
-public interface LeilaoDAO {
+public interface LeilaoDAO<E> {
 
 	//teste teste
 	

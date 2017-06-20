@@ -1,54 +1,61 @@
 package negocio;
 
+import java.awt.List;
 import java.util.ArrayList;
 
-public class Lote {
+public class Lote<E> {
 	
-	private String nome;		//nome eh uma descricao curta
-	private String descricao;	//descricao eh uma descricao longa
-	private String categoria;	//categoria
-	ArrayList<Lance> lances = new ArrayList<>();
+	private E nome;		//nome eh uma descricao curta
+	private E descricao;	//descricao eh uma descricao longa
+	private E categoria;	//categoria
+	ArrayList lances; //lances dados para esse lote
 		
-	public String getNome() {
+	
+	public Lote(E nome, E descricao, E categoria) {
+		this.nome = nome;
+		this.descricao = descricao;
+		this.categoria = categoria;
+		lances = new ArrayList();
+	}
+
+	public E getNome() {
 		return nome;
 	}
 
-	public void setNome(String nome) {
+	public void setNome(E nome) {
 		this.nome = nome;
 	}
 
-	public String getDescricao() {
+	public E getDescricao() {
 		return descricao;
 	}
 
-	public void setDescricao(String descricao) {
+	public void setDescricao(E descricao) {
 		this.descricao = descricao;
 	}
 
-	public String getCategoria() {
+	public E getCategoria() {
 		return categoria;
 	}
 
-	public void setCategoria(String categoria) {
+	public void setCategoria(E categoria) {
 		this.categoria = categoria;
 	}
 
-	public ArrayList<Lance> getLances() {
+	public ArrayList getLances() {
 		return lances;
 	}
 
-	public void addLance(Lance lance){
+	public void addLance(E lance){
 		lances.add(lance);
 	}
 	
-	public Lance retornaLance(Lance lance){
+	public E retornaLance(Lance lance){
 		for(int i=0;i<lances.size();i++){
 			if (lances.get(i).equals(lance)){
-				return lances.get(i);
+				return (E) lances.get(i);
 			}
 		}
 		return null;
 	}
-	
-
 }

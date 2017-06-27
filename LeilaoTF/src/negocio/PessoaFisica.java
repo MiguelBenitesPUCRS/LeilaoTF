@@ -1,6 +1,6 @@
 package negocio;
 
-public class PessoaFisica<E> extends Pessoa<E> {
+public class PessoaFisica<E> extends Pessoa<E>{
 	/**
 	 * Variáveis
 	 */
